@@ -1,0 +1,19 @@
+#column_one {
+  background-color: #f5f5f0;
+  border: 2px solid #000000;
+  margin: 5px 5px 5px 400px;
+  padding: inherit;
+  width: 200px;
+  height: auto;
+  float: left;
+}
+
+#column_two {
+  background-color: #f5f5f0;
+  border: 2px solid #000000;
+  margin: 5px 400px 5px 5px;
+  padding: inherit;
+  width: 200px;
+  height: auto;
+  float: right;
+}

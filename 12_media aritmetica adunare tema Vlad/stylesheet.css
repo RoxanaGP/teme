@@ -1,0 +1,16 @@
+.number {
+  width: 60px;
+  height: 30px;
+  margin: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#btn {
+  margin: 2px;
+  background-color: #b3d9ff;
+  border-radius: 5px;
+  font-family: serif;
+}

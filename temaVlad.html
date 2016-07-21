@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Da-mi numele: <input type="text" id="name" name="name" />?
+    <input type="button" id="btn" name="btn" value="Da-mi" />
+
+    <script>
+
+    function uppercase(nume)
+    {
+    var numeUppercase = nume.toUpperCase();
+    var numeUpperCaseFaraUltimaLitera = numeUppercase.substr(0, numeUppercase.length - 1);
+    return numeUpperCaseFaraUltimaLitera;
+    }
+
+    document.getElementById('btn').onclick = function () {
+    //var nume = document.getElementById('name').value;
+    var nume = 'vlad';
+    alert(uppercase(nume));
+    }
+
+</script>
+  </body>
+</html>
