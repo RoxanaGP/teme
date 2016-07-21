@@ -1,0 +1,17 @@
+https://gist.github.com/alexhawkins/f275513a88119423c958
+
+range = (start, end, step) ->
+  step = 1  unless step
+  r = []
+  i = start
+
+  while (if start <= end then i <= end else i >= end)
+    r.push i
+    i += step
+  r
+
+sum = (arr) ->
+  s = 0
+  for i in arr
+    s += i
+  s
