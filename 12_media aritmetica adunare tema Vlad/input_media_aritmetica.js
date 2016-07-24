@@ -62,9 +62,9 @@ window.onload = function() {
     alert("Media aritmetica a celor 6 cifre este: " + finalMean);
   }
 };
-//hint - sa parcurg un array cu un for - itterate array with for - array lenght!!!
 
-//tema - sa ma gandesc cum poate functiona cu un numar nelimitat de numere
-//minim 1 solutie
-//explicatie clarea
-//tema 2 - reduce nr de linii (60) cu 15 fara
+// Tema: Modifica script-ul sa functioneze cu un numar nelimitat de numere
+// Hint:
+//      - foloseste array
+//      - modifica scriptul putin cate putin si testeaza pe parcurs (console.log)
+
