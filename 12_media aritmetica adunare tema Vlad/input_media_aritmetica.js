@@ -11,21 +11,22 @@
 
 window.onload = function() {
   var button = document.getElementById('btn');
-  var number = document.getElementsByClassName('number');
+  var numere = document.getElementsByClassName('number');
+  var numere = new Array();
 
   button.addEventListener('click', function() {
 
-    var numere = [];
     var total = 0;
 
     for (var i = 0; i < numere.length; i++) {
-      var element = number.value;
+      var element = numere[i].value;
       if (element == '') {
         element = 0;
       } else {
-        element = parseInt();
+        element = parseInt(element);
       }
       total += numere[i];
+
       numere.push(element);
     }
     average = total/numere.length;
