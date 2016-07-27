@@ -12,7 +12,6 @@
 window.onload = function() {
   var button = document.getElementById('btn');
   var numere = document.getElementsByClassName('number');
-  var numere = new Array();
 
   button.addEventListener('click', function() {
 
@@ -25,9 +24,8 @@ window.onload = function() {
       } else {
         element = parseInt(element);
       }
-      total += numere[i];
+      total += element;
 
-      numere.push(element);
     }
     average = total/numere.length;
     console.log(average);
