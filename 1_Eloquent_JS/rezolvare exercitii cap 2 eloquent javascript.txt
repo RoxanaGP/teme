@@ -1,0 +1,98 @@
+Cap 2 - Exercise 1
+
+var line = "#";
+for (var count = 0; count<7; count+=1) {
+console.log(line);
+line = line+"#";
+}
+
+sau
+
+
+var line = "#";
+var count = 0;
+while(count < 7){
+count+=1;
+console.log(line);
+line = line + "#"
+}
+
+Cap 2 - Exercise 2
+
+for (i=1; i<=100; i=i+1){
+if (0 ==i%3 && 0 == i%5){
+console.log("fizzbuzz")
+}
+else if (0 == i%3){
+console.log("fizz")
+}
+else if (0 == i%5){
+console.log("buzz")
+}
+else {
+console.log(i)}
+}
+
+Cap 2 - Exercise 3
+
+var line1 = " # # # #";
+var line2 = "# # # # ";
+for (var count = 1; count<9; count+=1){
+if (count%2 == 0){
+console.log(line2);
+}
+else if(count%2 == 1){
+console.log(line1);
+}
+}
+
+
+
+
+Tema 1: afiseaza numerele impare pana la 50 folosind ambele cazuri (for si while)
+
+
+for(var counter=0; counter<=50; counter+=1){
+if (counter%2 == 1){
+console.log(counter)
+}
+}
+
+sau
+
+var counter = 0;
+while(counter<=50){
+counter+=1;
+if (counter%2 == 1){
+console.log(counter)
+}
+}
+
+
+Tema 2: pentru fiecare zi a saptamanii sa afisezi daca e zi lucratoare sau nu (folosind "switch" si "if")
+???
+
+Tema 3: afiseaza toate numerele pana la 100 care impartite la 3 dau restul 1
+
+for(var counter=0; counter<=100; counter+=1){
+if (counter%3 == 1){
+console.log(counter)
+}
+}
+
+Tema 4: sah cu while
+
+var line1 = " # # # #";
+var line2 = "# # # # ";
+var counter = 1;
+while (counter<9){
+counter+=1
+if (counter%2 == 0){
+console.log(line2);
+}
+else if(counter%2 == 1){
+console.log(line1);
+}
+}
+
+

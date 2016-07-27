@@ -1,0 +1,14 @@
+body{
+    background: white;
+}
+.dark-grey-background {
+    background: #323232;
+    height: 732px;
+    width: 763px;
+    padding: 10px;
+    margin: auto;
+}
+.first-frame {
+    background: #8e93a1;
+    
+}

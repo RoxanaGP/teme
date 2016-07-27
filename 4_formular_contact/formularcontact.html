@@ -1,0 +1,132 @@
+`<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
+        <script type="text/javascript">
+        //cand se incarca pagina
+          window.onload = function () {
+
+            // caut elementele html
+              var btn = document.getElementById('btn');
+              var nameError = document.getElementById('name-error');
+              var name = document.getElementById('name');
+
+              var emailError = document.getElementById('email-error');
+              var email = document.getElementById('email');
+
+              var commentError = document.getElementById('comment-error');
+              var comment = document.getElementById('comment');
+
+              // cand dau click pe button
+              btn.addEventListener('click', function () {
+                validateName();
+                validateEmail();
+                validateComment();
+                // tot ce vreau eu
+              });
+
+              function validateName() {
+                // iau valoare din elementul text "name"
+                var nameValue = name.value;
+
+                // varific lungimea numelui
+                if (nameValue.length >= 3){
+                  // specific lista de clase pe care le are nameError, separate de " "
+                  nameError.className = "hidden";
+                }
+                else {
+                  // specific lista de clase
+                  nameError.className = "";
+                }
+              }
+
+              function validateEmail() {
+
+                // roxana@code932.com
+
+                var emailValue = email.value;
+
+                var apos = emailValue.indexOf("@");
+                var dotpos = emailValue.lastIndexOf(".");
+                if (apos > 0 && dotpos-apos > 1 && dotpos < emailValue.length-1) {
+                  emailError.className = "hidden";
+                }
+                else {
+                  emailError.className = "";
+                }
+              }
+
+              function validateEmail2() {
+                var emailValue = email.value.split('');
+
+                var aFound = -1;
+                var dotFound = -1;
+
+                var ok = false;
+
+                var i = 0;
+                while (i < emailValue.length) {
+                  if (emailValue[i] == '@') {
+                    aFound = i;
+                  }
+
+                  if (emailValue[i] == '.') {
+                    dotFound = i;
+                  }
+
+                  if (aFound > 0 && dotFound-aFound > 1 && emailValue.length-1 > i) {
+                    ok = true;
+                    break;
+                  }
+
+                  i++;
+                }
+
+                if (ok) {
+                  //hide error
+                } else {
+                  //show error
+                }
+              }
+
+              function validateComment() {
+                var commentValue = comment.value;
+                if (commentValue.length >=20){
+                  commentError.className = "hidden";
+                }
+                else {
+                  commentError.className = "";
+                }
+              }
+          };
+        </script>
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <!-- <form action= "/my-form-page" method="post"> -->
+              <div class="errors">
+                <p id="name-error" class="hidden">Numele trebuie sa aiba minim 3 caractere.</p>
+                <p id="email-error" class="hidden">Emailul nu este valid.</p>
+                <p id="comment-error" class="hidden">Comentariul trebuie sa aiba minim 20 de caractere.</p>
+              </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value=""/>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" value=""></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" id="btn">Send your comment</button>
+                </div>
+            <!-- </form> -->
+        </div>
+    </body>
+</html>
+`

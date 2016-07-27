@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--25 - Creating Our Own Objects
+  <script type="text/javascript">
+    function person(name, age){
+      this.name = name;
+      this.age = age;
+    }
+
+    var bucky = new person("Bucky Roberts", 24);
+    var taylor = new person("Taylor Swift", 20);
+
+  </script>-->
+  <!--<script type="text/javascript">
+    /*26 - Object Initializers
+    bucky = {name:"Bucky Roberts", age:24};
+    taylor = {name:"Taylor Swift", age:20};*/
+
+    /*27 - Adding Methods to Our Objects
+    function people(name, age){
+      this.name = name;
+      this.age = age;
+      this.yearsUntilRetire = yearsLeft;
+    }
+
+    function yearsLeft (){
+      var numYears = 65 - this.age;
+      return numYears;
+    }
+
+    var bucky = new people ("Bucky Roberts", 24);*/
+  </script>-->
+
+  <!--40 - Simple Form Validation
+  <script type="text/javascript">
+    function validator(){
+      if(document.roxanasForm.thebox.checked)
+        alert("yey");
+      else {
+        alert("meh");
+      }
+    }
+  </script>-->
+</head>
+
+<body>
+<!--40 - Simple Form Validation
+<form name="roxanasForm">
+  <input type="checkbox" name="thebox" />
+  <input type="button" value="Press me!" onClick="validator()"/>
+<form/>-->
+
+
+<!--<script type="text/javascript">
+  /*27 - Adding Methods to Our Objects
+  document.write(bucky.yearsUntilRetire());*/
+
+  /*26 - Object Initializers
+  document.write(bucky.name + " loves " + taylor.name + " because she is " + taylor.age)*/
+
+  /*25 - Creating Our Own Objects
+  document.write(taylor.age)*/
+
+  /*document.write("hey now brown cow");*/
+  /*document.write("i love cheese")
+  document.write("i love avocado")*/
+
+  /*3 - Variables*/
+  /*var x = 23;
+  document.write(x);*/
+
+  /*4 - Different Types of Variables*/
+  /*var fish = 40;
+  document.write(fish);*/
+  /*var fish = "text";
+  document.write(fish);*/
+
+  /*var tuna = "i am a fish";
+  var cheese = "i like cheesy movie";
+  var bananas = "i love bananas";
+  document.write(tuna+cheese+bananas);*/
+  /*function funky() {
+      alert("bla bla bla");
+  }
+  funky();*/
+  /*function football(x){
+    alert("i love " + x);
+  }
+  football("black ball");
+  football("white ball");
+  football("red ball");*/
+    /*function apples(one, two){
+      document.write(one + " is better than " + two + "<br />");
+    }
+      apples("dogs", "cats");
+      apples("milk", "tea");
+      apples("olives", "avocado");*/
+      /*function tooeasy() {
+        return "gametime";
+      }
+      document.write(tooeasy());*/
+      /*function addNumbers(a,b) {
+        var c = a+b;
+        return c;
+      }
+      document.write(addNumbers(3,6));*/
+
+  /*10 - Calling a Function From Another Function*/
+  /*function doFirst() {
+    document.write("I am a first bo! ");
+  }
+  function doSecond() {
+    document.write("22222!!!");
+  }
+
+  function start() {
+    doFirst()
+    doSecond()
+  }
+
+  start()*/
+  /*function doFirst() {
+    document.write(" first! ")
+    doSecond();
+  }
+  function doSecond() {
+    document.write(" second! ")
+    doFirst();
+  }
+  doFirst()*/
+
+  /*11 - Global & Local Variables*/
+  /*var girl = " kelsey ";
+
+  function spit(){
+    document.write(girl)
+  }
+
+  spit();
+  document.write(girl);*/
+  /*function spit(){
+    var girl = " kelsey ";
+    document.write(girl)
+  }
+
+  spit();
+  document.write(girl);*/
+
+  /*12 - Math Operators*/
+  /*var apples = 4 + 76 + 555662 + 5568764;
+  document.write(apples);*/
+  /*var apples = 54 * 3;
+  document.write(apples);*/
+  /*var apples = 56 / 3;
+  document.write(apples);*/
+  /*var apples = 56 % 3;
+  document.write(apples);*/
+  /*var chop = 67;
+  chop--;
+  document.write(chop);*/
+  /**/
+  /*var bucky = 24;
+  bucky += 54;
+
+  document.write(bucky);*/
+  /*var bucky = 24;
+  bucky /= 54;
+
+  document.write(bucky);*/
+
+  /*13 - Assignment Operators*/
+  /*var bucky = 24;
+  bucky += 67;
+  bucky -= 32;
+  bucky *= 4;
+  bucky /= 5;
+
+  document.write(bucky);*/
+  /*14 - if Statement*/
+  /*var apples = 53;
+  var cheese = 53;
+
+  if(apples == cheese){
+    document.write("Yey")
+  }*/
+  /*var apples = 53;
+  var cheese = 99;
+
+  if(apples != cheese){
+    document.write("Yey")
+  }*/
+  /*var apples = 53;
+  var cheese = 99;
+
+  if(apples < cheese){
+    document.write("Yey")
+  }*/
+  /*var apples = 56;
+  var cheese = 53;
+
+  if(apples >= cheese){
+    document.write("Yey")
+  }*/
+
+  /*15 - if/else Statement*/
+  /*if(2==2) {
+    document.write("i love hotpockets");
+  }else{
+    document.write("i love coconut");
+  }*/
+  /*var blue = 43;
+  var red = 76;
+
+  if(blue==red) {
+    document.write("i love hotpockets");
+  }else{
+    document.write("i love coconut");
+  }*/
+  /*var blue = 587;
+  var red = 43;
+
+  if(blue<red) {
+    document.write("i love hotpockets");
+  }else{
+    document.write("i love coconut");
+  }*/
+
+  /*16 - Nesting and Fridays!*/
+  /*var firstName = "bucky";
+  var lastName = "pop";
+
+  if(firstName=="bucky"){
+      if(lastName=="roberts"){
+        document.write("welcome bucky rpberts")
+      }else{
+        document.write("welcome bucky someone")
+      }
+  }*/
+
+  /*17 - Complex Conditions*/
+  /*var first = "tommy";
+  var last = "roberts";
+
+  if( (first=="bucky") && (last=="roberts") && () ) {
+    document.write("hey dude! good job!")
+  }*/
+  /*var first = "tommy";
+  var last = "roberts";
+
+  if( (first=="bucky") || (last=="roberts") ) {
+    document.write("cheese");
+  }*/
+  /*18 - switch*/
+  /*var girl = "natalie";
+
+  switch(girl) {
+    case "natalie":
+        document.write("you must like garden state");
+        break;
+    case "ashley":
+        document.write("oh twilight");
+        break;
+    default:
+        document.write("this is a default");
+    }*/
+
+    /*19 - for Loop*/
+    /*for(x=0; x<10; x++){
+      document.write("i love rebecca black <br />")
+    }*/
+
+    /*20 - while Loop*/
+    /*var x = 1;
+
+    while(x<10){
+      document.write(x + " how do you like the apples? <br />");
+      x++;
+    }*/
+
+    /*21 - do while*/
+    /*var x = 5;
+
+    do{
+        document.write(x + " alo <br />");
+        x++;
+    }while(x<=20);*/
+
+    /*24 - Objects*/
+    /*var tuna = "hey i am a tuna fish!";
+    document.write (tuna.length);*/
+
+    /*25 - Creating Our Own Objects*/
+
+    /*28 - Arrays
+    var people = new Array ("Bucky", "Tommy", "Sarah", "Hannah", "Mykey");
+
+    document.write(people[3]);*/
+
+    /*29 - Other Ways to Create Arrays*/
+
+    /*var things = new Array(3);
+
+    things[0] = "jersey shore";
+    things[1] = "jimmy fallon";
+    things[2] = "thenewboston";
+
+    document.write(things[2]);*/
+
+    /*var stuff = new Array();
+
+    var x = 9;
+    var tuna = 65-54;
+
+    stuff[0] = "cheese";
+    stuff[1] = "pumpkin";
+
+    document.write(stuff[1]);*/
+
+    /*30 - Array Properties and Methods*/
+    /*var dudes = new Array ("Bucky", "Andy", "Dan");
+
+    document.write(dudes.length);*/
+
+    /*var dudes = new Array ("Bucky", "Andy", "Dan");
+    var chicks = new Array ("Lisa", "Sarah", "Hannah");
+
+    var people = dudes.concat(chicks);
+
+    document.write(people[5]);*/
+
+    /*31 - join and pop
+    var movies = new Array("Avatar", "Good will hunting", "Vanilla Sky", "Fight Club");*/
+
+    /*var string1 = movies.join(" - ");
+
+    document.write(string1);*/
+
+    /*document.write(movies[3] + "<br />");
+    movies.pop();
+    document.write(movies[3]);
+    movies.pop();*/
+    /*pop - remove the last element from the array*/
+
+    /*32 - reverse, push, sort*/
+    /*push - add one element*/
+    /*var bp = new Array("head", "shoulders", "knees", "toes");
+
+    bp.reverse();
+    bp.push("tongue", "liver");
+    bp.sort();
+
+    var string1 = bp.join();
+    document.write(string1);*/
+
+    /*33 - Add Array Elements Using a Loop*/
+    /*var pie = prompt("Enter your name:", "");
+    document.write("Hello " + pie + "!")*/
+
+    /*var crap = new Array(3);
+
+    for (i=0; i<3; i++) {
+      crap[i] = prompt("Add something to the Array:", "");
+    }
+
+    document.write(crap[0] + crap[1] + crap[2]);*/
+
+    /*34 - Cool Technique to Print Array Elements*/
+
+    /*var stuff = new Array("apples", "pears", "cheese", "milk");
+    stuff.sort();
+
+    for(i=0; i<stuff.length; i++){
+      document.write(stuff[i] + "<br />");
+    }*/
+
+    /*35 - Associative Arrays*/
+    /*var bucky = new Array();
+    bucky["color"]= "blue";
+    bucky["food"] = "hot pockets";
+
+    document.write("bucky favorite food is " + bucky["food"]);*/
+
+    /*36 - Math Objects (values that have mathematical meaning)*/
+
+    /*document.write(Math.E)*/
+    /*var n = prompt ("Enter a number", "");
+    var answer = Math.sqrt(n);
+    alert("The sqare root of " + n + " is " + answer + ".");*/
+
+    /*37 - Date Objects*/
+
+    /*function doSomething(){
+      document.write("Tuna ");
+    }
+
+    setInterval("doSomething()", 1000);*/
+
+    /*function printTime(){
+      var now = new Date();
+      var hours = now.getHours();
+      var mins = now.getMinutes();
+      var seconds = now.getSeconds();
+      document.write(hours+":"+mins+":"+seconds+"<br />")
+    }
+
+    setInterval("printTime ()", 1000);*/
+</script>-->
+
+  <!--/*22 - Event Handlers*/
+  <form>
+    <input type="button" value="touch me" onClick=
+    "alert('ahh!'); alert('two times')"/>
+  </form>-->
+
+  <!--23 - onMouseOver & onLoad
+  <a href="http://thenewboston.com" onMouseOver="alert('Game time!')">Hover over me!</a>
+  <a href="http://thenewboston.com" onMouseOut="alert('Hey come back!')">Hover over me!</a>-->
+
+  <!--38 - Accessing Forms
+  <form>
+    Username: <input type = "text" />
+    Password: <input type = "password" />
+    <input type="submit" value="Submit!">
+  </form>
+  <script type="text/javascript">
+  var x = document.forms[0].length;
+  document.write(x);
+  </script>-->
+
+  <!--39 - Accessing Form Elements
+  <form name="roxanasForm">
+    Username: <input type="text" name="username"/>
+    Password: <input type="password" name="password"/>
+    <input type="submit" value="Submit!"/>
+  </form>
+  <script type="text/javascript">
+    var x = document.forms[0].elements[0].name;/*???*/
+    document.write(x);
+  </script>-->
+
+</body>
+</html>

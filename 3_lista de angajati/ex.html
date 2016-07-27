@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lista angajati</title>
+  </head>
+  <body>
+    <ul id="list">
+
+    </ul>
+    <button type="button" name="button" id="btnadauga">Adauga</button>
+    <script type="text/javascript">
+
+    // list[index] se citeste lista de index: "angajati de i"
+    var btn = document.getElementById('btnadauga');
+    var listUl = document.getElementById('list');
+    var angajati = new Array("Ex", "Bla", "Bula", "Strula", "Cartof");
+    var angajat = null,
+        elem = null,
+        listContent = null;
+    btn.addEventListener('click', function () {
+      var elemNew = prompt ("Enter your name: ", "");
+      if (angajati.indexOf(elemNew)==-1){
+        angajati.push(elemNew);
+        listUl.innerHTML = "";
+        afiseazaLista();
+      }else{
+        alert("Angajatul exista deja in lista!");
+      }
+    });
+
+    function afiseazaLista() {
+      for (var i=0; i<angajati.length; i++){
+        angajat = angajati[i];
+        elem = "<li>"+angajat+"</li>";
+        listContent = listUl.innerHTML;
+        listUl.innerHTML = listContent + elem;
+      }
+    }
+    afiseazaLista();
+
+    </script>
+
+    <!--tema: sa adauge userul angajati noi prin alert sau formular
+  sa nu existe de 2 ori acelasi angajat(fara nume duplicate)-->
+  </body>
+</html>
